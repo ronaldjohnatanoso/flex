@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-container{
+    background-color: rgb(228, 228, 140);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    border: solid black;
+    width: 900px;
+    padding: 10px;
+}
+
+.signup{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.header-container{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+     border: solid black;
+     width: 900px;
+     align-items: center;
+     padding: 10px;
+}
+
+.subscribe, .social{
+    align-self: flex-end;
+}
+
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    flex-wrap: wrap;
+}
+/* border box, then set constant height and width, then put solid border so there will be no gaps as borders */
+.photo-grid-item {
+    border: 1px solid rgb(0, 0, 0);
+    width: 300px;
+    height: 300px;
+  }
+/* for non-image div only, with flex, make sure to set width first then flex initial */
+  .footer{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: green;
+  }
+
+  .footer-item{
+    background-color: rgb(128, 77, 209);
+    flex: initial;
+    width: 500px;
+  }
+/* dont forget to put a flex: value to every non-image divs */
+  .footer-one, .footer-three{
+    flex: 1;
+    border: solid black;
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .bottom-item{
+    width: 300px;
+    flex: initial;
+    background-color: rgb(228, 143, 143);
+    border: solid black;
+  }
+
+  .bottom-three{
+    flex: 1;
+  }
+
